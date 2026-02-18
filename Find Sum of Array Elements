@@ -5,15 +5,14 @@ public class Solution {
 
     public static void main(String[] args) {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-    Scanner scan=new Scanner(System.in);
-        int a=scan.nextInt();
+        Scanner s=new Scanner(System.in);
+        int N=s.nextInt();
         int sum=0;
-        for(int i=0;i<a;i++)
-        {
-            int b=scan.nextInt();
-            sum=sum+b;
-            }  
-        System.out.print(sum);
-    
+        for(int i=0;i<N;i++){
+            sum+=s.nextInt();
+        }
+        System.out.println(sum);
+        s.close();
+        
     }
 }
